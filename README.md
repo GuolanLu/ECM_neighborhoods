@@ -21,21 +21,6 @@ The input table should contain at least:
   - `Periostin_count_norm`
   - `CollagenIV_count_norm`
 
-## Method
-The notebook:
-1. Loads the input CSV file
-2. Selects five normalized ECM features
-3. Clusters cells into **4 ECM neighborhoods** using `MiniBatchKMeans`
-4. Stores the cluster labels in the column `ecm25um`
-5. Maps clusters to descriptive neighborhood names:
-   - `Collagen I-periostin`
-   - `TenascinC`
-   - `Low ECM`
-   - `Periostin-collagen I-fibronectin`
-6. Visualizes:
-   - a clustered heatmap of ECM neighborhood centroids
-   - a bar plot showing the number of cells in each ECM neighborhood
-
 ## Output
 The notebook generates:
 - ECM neighborhood assignment for each cell
